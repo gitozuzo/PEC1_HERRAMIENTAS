@@ -51,3 +51,5 @@ let nextAction = (
     track.style.left = `${-1 * (leftPosition + carruselWidth)}px`;
   }
 };
+
+AOS.init();

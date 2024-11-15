@@ -17,5 +17,14 @@
     "parcel": "^2.13.0",
     "rimraf": "^6.0.1",
     "svgo": "^3.3.2"
+  },
+  "browserslist": [
+    "> 0.2%",
+    "not dead",
+    "last 2 versions",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }
