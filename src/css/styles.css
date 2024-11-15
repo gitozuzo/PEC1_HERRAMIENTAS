@@ -582,6 +582,10 @@ figure {
 /* Responsive Design */
 /*************************/
 @media (max-width: 768px) {
+  /* Estilo del título */
+  header .title {
+    font-size: 1.7rem;
+  }
   nav ul {
     flex-direction: column;
   }
