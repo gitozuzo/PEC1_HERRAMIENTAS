@@ -179,7 +179,8 @@ footer {
     height: 304px;
     padding: 10px 0;
     margin: 0 auto;
-    max-width: 48vw;
+    /*max-width: 48vw;*/
+    max-width: 100%;
     overflow: hidden;
 
     .carrusel-track {
