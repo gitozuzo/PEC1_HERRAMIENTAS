@@ -175,7 +175,7 @@ footer {
 .carousel {
   width: 100%;
   /*margin: 0px 0px;*/
-  margin: 0px 60px;
+  margin: 0px 0px;
 }
 
 .carousel h2 {
@@ -323,11 +323,19 @@ footer {
     display: flex;
   }
 
-  .carrusel {
-    width: 600px;
-  }
-  .carrusel a img {
-    width: 400px;
+  /*.carrusel {
+    width: 100%;
+  }*/
+  /* .carrusel a img {
+    width: 100%;
+  }*/
+
+  .carrusel-list {
+    padding: 10px 0px;
+    margin: 0px 40px auto;
+    max-width: 100%;
+    /*max-width: 48vw;
+  overflow: hidden;*/
   }
 }
 
