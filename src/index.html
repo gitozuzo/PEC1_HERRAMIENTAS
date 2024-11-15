@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portada - Descubre Zuzones</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.scss" />
     <script src="./js/app.js" defer></script>
   </head>
   <body>
@@ -30,7 +31,6 @@
 
     <main>
       <section class="container">
-        <!-- Primera fila: Título y texto de introducción -->
         <div class="header-row">
           <h1>Descubre Zuzones</h1>
           <p class="justificado">
@@ -56,8 +56,6 @@
           </p>
         </div>
 
-        <!-- Segunda fila: Texto e Imagen en dos columnas -->
-        <!-- <div class="header-row">-->
         <div class="carousel">
           <h2>Galería de Imágenes</h2>
 
@@ -66,6 +64,7 @@
               class="carrusel-arrow carrusel-prev"
               id="button-prev"
               data-button="button-prev"
+              aria-label="button-next"
               onclick="app.processingButton(event)"
             >
               <svg
@@ -179,7 +178,6 @@
               <div class="carrusel">
                 <div>
                   <a href="#">
-                    <!--<h4><small>Imagen</small> Mas</h4>-->
                     <picture>
                       <img src="./img/zuzones_11.jfif" alt="imagen" />
                     </picture>
@@ -189,7 +187,6 @@
               <div class="carrusel">
                 <div>
                   <a href="#">
-                    <!--<h4><small>Imagen</small> Mas</h4>-->
                     <picture>
                       <img src="./img/zuzones_12.jpg" alt="imagen" />
                     </picture>
@@ -202,6 +199,7 @@
               class="carrusel-arrow carrusel-next"
               id="button-next"
               data-button="button-next"
+              aria-label="button-next"
               onclick="app.processingButton(event)"
             >
               <svg
