@@ -1,0 +1,233 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portada - Descubre Zuzones</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="container-cab">
+      <div class="logo-title">
+        <div class="logo">
+          <img src="./img/Escudo_de_Zuzones.svg.png" alt="Escudo de Zuzones" />
+        </div>
+        <div class="title">Zuzones</div>
+      </div>
+      <!-- Botón de menú hamburguesa -->
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+      <!-- Menú de navegación -->
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html" class="enlaceactual">Portada</a></li>
+          <li><a href="categoria.html">Categoría</a></li>
+          <li><a href="presentacion.html">Presentación</a></li>
+          <li><a href="enlaces.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container">
+        <!-- Primera fila: Título y texto de introducción -->
+        <div class="header-row">
+          <h1>Descubre Zuzones</h1>
+          <p class="justificado">
+            Zuzones es una encantadora localidad llena de historia, cultura y
+            tradiciones. Se encuentra al sureste de la provincia de Burgos, en
+            el límite con la provincia de Soria. A orillas del río Duero
+            descansa este municipio en el que se han encontrado diversos restos
+            romanos de época tardorromana (que reciben el nombre de La Fernosa),
+            lo que indica que posiblemente fue un lugar de entierro de los
+            habitantes de otras poblaciones cercanas más relevantes. Destaca la
+            Iglesia San Martín de Tours. Además, en las afueras de su casco
+            urbano se conservan una serie de bodegas subterráneas, algunas de
+            ellas con lagar incorporado (justamente se está rehabilitando uno
+            con más de 200 años de historia en sus paredes). A modo de anécdota,
+            cabe resaltar que Zuzones es el último pueblo del abecedario
+            español. Fiestas populares de Zuzones: 13 de junio en honor a San
+            Antonio de Padua y 11 de noviembre en honor a su patrón, San Martín
+            de Tours. Por su situación geográficamente, permite disfrutar de
+            todo tipo de imágenes, el río, el valle y los Montes de la Vid.
+            Además una abundante vegetación donde destacan los sauces, los
+            chopos, los alisos y los fresnos hacen que se pueda ver un mar de
+            naturaleza.
+          </p>
+        </div>
+
+        <!-- Segunda fila: Texto e Imagen en dos columnas -->
+        <!-- <div class="header-row">-->
+        <div class="carousel">
+          <h2>Galería de Imágenes</h2>
+
+          <div class="carrusel-list" id="carrusel-list">
+            <button
+              class="carrusel-arrow carrusel-prev"
+              id="button-prev"
+              data-button="button-prev"
+              onclick="app.processingButton(event)"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="chevron-left"
+                class="svg-inline--fa fa-chevron-left fa-w-10"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                ></path>
+              </svg>
+            </button>
+
+            <div class="carrusel-track" id="track">
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <picture>
+                      <img src="./img/zuzones_1.jfif" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <picture>
+                      <img src="./img/zuzones_2.jfif" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <picture>
+                      <img src="./img/zuzones_3.jfif" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <picture>
+                      <img src="./img/zuzones_4.jfif" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <picture>
+                      <img src="./img/zuzones_5.jfif" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <picture>
+                      <img src="./img/zuzones_6.jfif" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <picture>
+                      <img src="./img/zuzones_7.jfif" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <picture>
+                      <img src="./img/zuzones_8.jfif" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <picture>
+                      <img src="./img/zuzones_9.jfif" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <picture>
+                      <img src="./img/zuzones_10.jfif" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <!--<h4><small>Imagen</small> Mas</h4>-->
+                    <picture>
+                      <img src="./img/zuzones_11.jfif" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="carrusel">
+                <div>
+                  <a href="#">
+                    <!--<h4><small>Imagen</small> Mas</h4>-->
+                    <picture>
+                      <img src="./img/zuzones_12.jpg" alt="imagen" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carrusel-arrow carrusel-next"
+              id="button-next"
+              data-button="button-next"
+              onclick="app.processingButton(event)"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="chevron-right"
+                class="svg-inline--fa fa-chevron-right fa-w-10"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- </div>-->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Descubre Zuzones. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
