@@ -271,75 +271,9 @@ footer {
   right: 0px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-  nav ul li {
-    margin: 10px 0;
-  }
-  .container,
-  .category-list,
-  .presentation,
-  .links {
-    padding: 10px;
-  }
-
-  .container {
-    flex-direction: column; /* Coloca texto e imagen en una sola columna */
-  }
-
-  .container .image {
-    max-width: 100%; /* Imagen a 100% en pantallas pequeñas */
-  }
-
-  #nav-menu {
-    display: none; /* Oculto por defecto */
-    flex-direction: column;
-    background-color: var(--primary-color);
-    position: absolute;
-    top: 110px;
-    right: 0;
-    width: 100%;
-    padding: 20px;
-  }
-
-  #nav-menu ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #nav-menu ul li {
-    margin: 10px 0;
-  }
-
-  /* Mostrar el botón de menú hamburguesa */
-  .menu-toggle {
-    display: block;
-  }
-  /* Mostrar menú en pantallas pequeñas cuando está activo */
-  #nav-menu.show {
-    display: flex;
-  }
-
-  /*.carrusel {
-    width: 100%;
-  }*/
-  /* .carrusel a img {
-    width: 100%;
-  }*/
-
-  .carrusel-list {
-    padding: 10px 0px;
-    margin: 0px 2px auto;
-    max-width: 100%;
-    /*max-width: 48vw;
-  overflow: hidden;*/
-  }
-}
-
+/********************/
 /* Página categorías*/
+/********************/
 
 .category-section {
   max-width: var(--max-width);
@@ -402,19 +336,9 @@ footer {
   /*color: var(--text-color);*/
 }
 
-@media (max-width: 768px) {
-  .category-item {
-    flex: 1 1 100%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .category-item {
-    flex: 1 1 calc(50% - 20px);
-  }
-}
-
-/*detalle*/
+/*********************/
+/* Página detalle*/
+/*********************/
 
 .detail-page {
   max-width: var(--max-width);
@@ -520,31 +444,6 @@ ul.activities-list li p {
   margin: 0;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .detail-page {
-    padding: 10px;
-  }
-
-  .intro-section h1 {
-    font-size: 1.6rem;
-  }
-
-  .main-image {
-    max-width: 100%;
-  }
-
-  ul.activities-list li {
-    padding: 1rem;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    align-items: flex-start;
-  }
-
-  ul.activities-list li p {
-    font-size: 0.95rem;
-  }
-}
-
 /*presentacion*/
 
 .presentation-page {
@@ -603,9 +502,9 @@ figure {
   }
 }
 
-/*enlaces*/
-
-/**********************************************************/
+/*********************/
+/* Página de enlaces*/
+/*********************/
 
 /* Contenedor principal */
 .links-page-container {
@@ -644,7 +543,9 @@ figure {
   text-align: justify;
 }
 
-/* Listado de enlaces */
+/**********************/
+/* Página Listado de enlaces */
+/**********************/
 .links-list {
   list-style: none;
   padding: 0;
@@ -677,8 +578,92 @@ figure {
   text-decoration: underline;
 }
 
+/**************************/
 /* Responsive Design */
+/*************************/
 @media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .container,
+  .category-list,
+  .presentation,
+  .links {
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column; /* Coloca texto e imagen en una sola columna */
+  }
+
+  .container .image {
+    max-width: 100%; /* Imagen a 100% en pantallas pequeñas */
+  }
+
+  #nav-menu {
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 110px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  #nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-menu ul li {
+    margin: 10px 0;
+  }
+
+  /* Mostrar el botón de menú hamburguesa */
+  .menu-toggle {
+    display: block;
+  }
+  /* Mostrar menú en pantallas pequeñas cuando está activo */
+  #nav-menu.show {
+    display: flex;
+  }
+
+  .carrusel-list {
+    padding: 10px 0px;
+    margin: 0px 2px auto;
+    max-width: 100%;
+  }
+
+  .category-item {
+    flex: 1 1 100%;
+  }
+
+  .detail-page {
+    padding: 10px;
+  }
+
+  .intro-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .main-image {
+    max-width: 100%;
+  }
+
+  ul.activities-list li {
+    padding: 1rem;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: flex-start;
+  }
+
+  ul.activities-list li p {
+    font-size: 0.95rem;
+  }
+
   .links-page-container {
     padding: 1rem;
   }
@@ -695,5 +680,11 @@ figure {
   .links-copyleft-section p,
   .links-disclaimer-section p {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .category-item {
+    flex: 1 1 calc(50% - 20px);
   }
 }
