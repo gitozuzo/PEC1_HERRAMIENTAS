@@ -9,24 +9,19 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="container-cab">
+   <header class="container-cab">
       <div class="logo-title">
         <div class="logo">
-          <img src="./img/Escudo_de_Zuzones.svg.png" alt="Escudo de Zuzones" />
+          <img src="./img/zuzones-logo.svg" alt="Logo de Zuzones" />
         </div>
-        <div class="title">Zuzones</div>
       </div>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
-        &#9776;
-      </button>
-      <nav id="nav-menu" aria-label="Menú de navegación">
-        <ul>
-          <li><a href="index.html">Portada</a></li>
-          <li><a href="categoria.html">Categoría</a></li>
-          <li><a href="presentacion.html" class ="enlaceactual">Presentación</a></li>
-          <li><a href="enlaces.html">Enlaces</a></li>
-        </ul>
-      </nav>
+
+      <div class="header__text-box">
+        <p class="heading-primary">
+          <span class="heading-primary--main">Descubre Zuzones</span>
+          <span class="heading-primary--sub">Un lugar inolvidable</span>
+        </p>
+      </div>
     </header>
 
     <!-- Main Content -->
@@ -42,9 +37,9 @@
       <section class="media-section">
         <figure>
           <img
-            src="./img/vista_panoramica.jpg"
+            src="./img/zuzones_presentacion.jpg"
             alt="Paisaje panorámico de Zuzones"
-            class="main-image"
+            class="fluid-image"
           />
           <figcaption>
             Vista panorámica de Zuzones, rodeada de montañas y naturaleza.
@@ -59,13 +54,13 @@
           </figcaption>
         </figure>    
 
-      </section>
+      </section>   
 
       <section class="content-section">
         <h2>Acerca de Zuzones</h2>
         <p class="justificado">
-          Zuzones es una localidad que ofrece una rica mezcla de historia,
-          cultura y naturaleza. En esta página web, te invitamos a explorar los
+          Zuzones es una localidad que ofrece una rica mezcla de naturaleza,
+          cultura y historia. En esta página web, te invitamos a explorar los
           lugares más destacados de la ciudad, desde sus edificios históricos
           hasta sus eventos culturales más importantes. Además, descubrirás
           rutas de senderismo y los parajes naturales que rodean esta pintoresca
@@ -89,11 +84,60 @@
           experiencia en Zuzones sea inolvidable.
         </p>
       </section>
-    </main>
+      
+      <section class="zuzones-animation">
+  
+        <div class="animation-container">
+          
+          <svg viewBox="0 0 600 300"
+               xmlns="http://www.w3.org/2000/svg"
+               class="zuzones-path">
+               <!-- Sendero curvado -->
+               <path d="M50 250 Q200 50 350 250 T550 250"
+                     stroke="#4CAF50"
+                     stroke-width="4"
+                     fill="none"
+                     stroke-dasharray="10, 10"
+                     class="path"
+                />
+      
+                <!-- Árbol -->
+                <circle cx="200" cy="120" r="30" fill="#7ed56f" />
+                <rect x="190" y="150" width="20" height="40" fill="#654321" />
+                <!-- Edificio Histórico -->
+                <rect x="350" y="150" width="50" height="100" fill="#FF5722" />
+                <rect x="365" y="180" width="20" height="20" fill="#ffffff" />
+                <!-- Fiesta (ícono estrella) -->
+                <polygon
+                points="500,120 505,140 525,140 510,150 515,170 500,160 485,170 490,150 475,140 495,140"
+                fill="#FFD700" />
+                <!-- Viajero (círculo pequeño) -->
+                <circle
+                cx="50"
+                cy="250"
+                r="8"
+                fill="#FF5722"
+                class="traveler" />
+          </svg>
+          <p class="animation-caption">
+            Explora Zuzones: naturaleza, cultura y historia.
+          </p>
+        </div>
+      </section>
+  
+   </main>
   
   <footer>
-    <p>&copy; 2024 Descubre Zuzones. Todos los derechos reservados.</p>
-  </footer>
+      <!-- Menú de navegación -->
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Portada</a></li>
+          <li><a href="categoria.html" >Categoría</a></li>
+          <li><a href="presentacion.html" class="enlaceactual">Presentación</a></li>
+          <li><a href="enlaces.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </footer>
 
 
 </body>

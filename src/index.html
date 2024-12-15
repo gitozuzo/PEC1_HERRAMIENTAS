@@ -11,22 +11,16 @@
     <header class="container-cab">
       <div class="logo-title">
         <div class="logo">
-          <img src="./img/Escudo_de_Zuzones.svg.png" alt="Escudo de Zuzones" />
+          <img src="./img/zuzones-logo.svg" alt="Logo de Zuzones" />
         </div>
-        <div class="title">Zuzones</div>
       </div>
-      <!-- Botón de menú hamburguesa -->
-      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
 
-      <!-- Menú de navegación -->
-      <nav id="nav-menu">
-        <ul>
-          <li><a href="index.html" class="enlaceactual">Portada</a></li>
-          <li><a href="categoria.html">Categoría</a></li>
-          <li><a href="presentacion.html">Presentación</a></li>
-          <li><a href="enlaces.html">Enlaces</a></li>
-        </ul>
-      </nav>
+      <div class="header__text-box">
+        <p class="heading-primary">
+          <span class="heading-primary--main">Descubre Zuzones</span>
+          <span class="heading-primary--sub">Un lugar inolvidable</span>
+        </p>
+      </div>
     </header>
 
     <main>
@@ -56,176 +50,44 @@
           </p>
         </div>
 
-        <div class="carousel">
-          <h2>Galería de Imágenes</h2>
+        <div class="composition">
+          <img
+            srcset="img/zuzones_5.jpg 300w, img/zuzones_5_large.jpg 1000w"
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="Photo 1"
+            class="composition__photo composition__photo--p1"
+            src="img/zuzones_5_large.jpg"
+          />
 
-          <div class="carrusel-list" id="carrusel-list">
-            <button
-              class="carrusel-arrow carrusel-prev"
-              id="button-prev"
-              data-button="button-prev"
-              aria-label="button-next"
-              onclick="app.processingButton(event)"
-            >
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="chevron-left"
-                class="svg-inline--fa fa-chevron-left fa-w-10"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 320 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
-                ></path>
-              </svg>
-            </button>
+          <img
+            srcset="img/zuzones_7.jpg 300w, img/zuzones_7_large.jpg 1000w"
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="Photo 2"
+            class="composition__photo composition__photo--p2"
+            src="img/zuzones_7_large.jpg"
+          />
 
-            <div class="carrusel-track" id="track">
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_1.jfif" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_2.jfif" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_3.jfif" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_4.jfif" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_5.jfif" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_6.jfif" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_7.jfif" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_8.jfif" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_9.jfif" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_10.jfif" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_11.jfif" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="carrusel">
-                <div>
-                  <a href="#">
-                    <picture>
-                      <img src="./img/zuzones_12.jpg" alt="imagen" />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="carrusel-arrow carrusel-next"
-              id="button-next"
-              data-button="button-next"
-              aria-label="button-next"
-              onclick="app.processingButton(event)"
-            >
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="chevron-right"
-                class="svg-inline--fa fa-chevron-right fa-w-10"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 320 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                ></path>
-              </svg>
-            </button>
-          </div>
+          <img
+            srcset="img/zuzones_6.jpg 300w, img/zuzones_6_large.jpg 1000w"
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="Photo 3"
+            class="composition__photo composition__photo--p3"
+            src="img/zuzones_6_large.jpg"
+          />
         </div>
-        <!-- </div>-->
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2024 Descubre Zuzones. Todos los derechos reservados.</p>
+      <!-- Menú de navegación -->
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html" class="enlaceactual">Portada</a></li>
+          <li><a href="categoria.html">Categoría</a></li>
+          <li><a href="presentacion.html">Presentación</a></li>
+          <li><a href="enlaces.html">Enlaces</a></li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
