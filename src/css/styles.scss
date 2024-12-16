@@ -524,7 +524,7 @@ footer {
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
     }
 
@@ -770,7 +770,7 @@ footer {
       }
 
       &__details ul li {
-        font-size: 1.1rem; /* Texto más pequeño */
+        font-size: 1.2rem; /* Texto más pequeño */
       }
     }
   }
@@ -802,8 +802,8 @@ footer {
 
   .media-section {
     figure {
-      padding: 0px;
-      margin: 0px;
+      padding: 0;
+      margin: 0;
 
       .main-image {
         width: 100%;
@@ -882,6 +882,133 @@ footer {
         font-size: 1rem;
         color: #333;
         margin: 0;
+      }
+    }
+  }
+
+  // Media Queries
+  @media (max-width: 1024px) {
+    .intro-section {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .media-section {
+      figure {
+        .main-image {
+          height: 400px; // Reduce la altura de la imagen
+        }
+      }
+
+      figcaption {
+        font-size: 1rem; // Reduce el tamaño del texto
+      }
+    }
+
+    .content-section {
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      ul.activities-list {
+        li {
+          padding: 1rem; // Reduce el padding
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .intro-section {
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .media-section {
+      figure {
+        .main-image {
+          height: 300px; // Reduce la altura de la imagen aún más
+        }
+      }
+
+      figcaption {
+        font-size: 0.9rem;
+      }
+    }
+
+    .content-section {
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      ul.activities-list {
+        li {
+          padding: 0.8rem; // Reduce el padding
+          &::before {
+            font-size: 1.2rem; // Reduce el tamaño del emoji
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .intro-section {
+      h1 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .media-section {
+      figure {
+        .main-image {
+          height: 250px; // Reduce aún más la altura de la imagen
+        }
+      }
+
+      figcaption {
+        font-size: 0.8rem;
+      }
+    }
+
+    .content-section {
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      ul.activities-list {
+        li {
+          padding: 0.6rem; // Reduce el padding para móviles
+          &::before {
+            font-size: 1rem; // Reduce el tamaño del emoji
+          }
+        }
       }
     }
   }
@@ -1139,7 +1266,7 @@ footer {
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
     }
 
@@ -1330,7 +1457,7 @@ footer {
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
     }
 
