@@ -514,12 +514,10 @@ footer {
         }
       }
     }
-
-   
   }
 }
 @media (max-width: 480px) {
-  .container{
+  .container {
     .header-row {
       h1 {
         font-size: 1.2rem;
@@ -564,7 +562,7 @@ footer {
   flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
   max-width: 60%;
   margin: 0rem auto;
-  margin-bottom: 4rem;
+  margin-bottom: 6.5rem;
 
   .card {
     flex: 1; /* Permite que las tarjetas tengan el mismo ancho */
@@ -574,8 +572,8 @@ footer {
     position: relative;
 
     &__side {
-      height: 52rem;                 
-      width: 100%;      
+      height: 52rem;
+      width: 100%;
       border-radius: 3px;
       overflow: hidden;
       box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
@@ -584,10 +582,8 @@ footer {
         background-color: #fff;
         z-index: 1; /* Asegura que la cara frontal está visible */
       }
-      
     }
 
-    
     &__picture {
       background-size: cover;
       height: 23rem;
@@ -690,26 +686,22 @@ footer {
           }
         }
       }
-    }   
-    
+    }
   }
- 
 }
 
 //* Media Queries Responsivas */
 
-
 /* Pantallas grandes (769px a 1024px) */
 @media only screen and (max-width: 1024px) {
   .card-container {
-    justify-content: space-between;
     gap: 1rem;
   }
 
   .card {
-    min-width: 30%; /* Ocupan el 30% del contenedor */
+    /*min-width: 30%; 
     max-width: 30%;
-    height: 50rem;
+    height: 50rem;*/
 
     &__picture {
       height: 22rem; /* Ajustar altura de las imágenes */
@@ -727,21 +719,18 @@ footer {
   }
 }
 
-
 /* Pantallas medianas (481px a 768px) */
 @media only screen and (max-width: 768px) {
   .card-container {
-    flex-direction: column; /* Las tarjetas se apilan verticalmente */
-    gap: 1rem;
-    /*margin: 0.5rem auto;*/
-    width: 100%;
+    flex-direction: column; /* Cambia a una columna */
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Alinea las tarjetas al centro */
+    max-width: 100%; /* Las tarjetas ocupan todo el ancho */
+    gap: 1.5rem; /* Ajusta el espacio entre las tarjetas */
   }
 
   .card {
-    /*min-width: 100%; 
-    max-width: 100%;*/
-    width: 100%;
-    height: auto;
+    max-width: 100%;
 
     &__picture {
       height: 20rem; /* Ajustar la altura de las imágenes */
@@ -784,8 +773,6 @@ footer {
     }
   }
 }
-
-
 
 /*********************/
 /* Página detalle*/
@@ -1357,7 +1344,6 @@ footer {
   }
 }
 
-
 /**************************/
 /* Responsive Design */
 /*************************/
@@ -1413,7 +1399,6 @@ footer {
       font-size: 0.95rem;
     }
   }
-  
 }
 
 @media (max-width: 1024px) {
@@ -1453,4 +1438,3 @@ footer {
     transform: translateX(0);
   }
 }
-
