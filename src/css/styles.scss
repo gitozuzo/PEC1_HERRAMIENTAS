@@ -747,9 +747,7 @@ footer {
 /* Pantallas pequeñas (480px o menos) */
 @media only screen and (max-width: 480px) {
   .card-container {
-    flex-direction: column; /* Las tarjetas se apilan verticalmente */
-    gap: 2rem;
-    margin: 0.5rem auto;
+    margin: 1rem auto;
   }
 
   .card {
