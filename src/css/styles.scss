@@ -171,53 +171,6 @@ header {
   }
 }
 
-.composition2 {
-  display: flex; /* Flexbox para organizar las tarjetas en fila */
-  justify-content: space-between; /* Espaciado entre las tarjetas */
-  gap: 1rem; /* Espaciado entre tarjetas */
-  flex-wrap: wrap;
-  width: 100%; /* O un valor específico como 600px */
-  margin-bottom: 3rem;
-
-  &__photo {
-    /*flex: 1; 
-    min-width: 10rem; 
-    max-width: 30%;    
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: 4px;
-    transition: all 0.2s;
-    outline-offset: 2rem;*/
-
-    flex: 1 1 calc(33% - 1rem); /* Ancho flexible con espacio entre elementos */
-    max-width: 33%; /* Ancho máximo del 30% */
-    height: 485px; /* Altura fija para las imágenes */
-    overflow: hidden; /* Oculta contenido que desborde */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease-in-out;
-    outline-offset: 2rem;
-
-    img {
-      width: 100%; /* La imagen ocupa todo el contenedor */
-      height: 100%; /* La imagen ocupa toda la altura */
-      object-fit: cover; /* Recorta la imagen manteniendo la relación de aspecto */
-      transition: transform 0.3s ease-in-out;
-      z-index: 10;
-    }
-
-    &:hover {
-      outline: 1.5rem solid var(--secondary-color);
-      transform: scale(1.05) translateY(-0.5rem);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      z-index: 20;
-    }
-  }
-
-  &:hover &__photo:not(:hover) {
-    transform: scale(0.9);
-  }
-}
-
 .enlaceactual {
   border-bottom: 3px solid var(--text-color-head);
 }
@@ -808,8 +761,11 @@ footer {
 
       .main-image {
         width: 100%;
+        height: auto;
+        display: block; /* Evita el espacio adicional debajo de las imágenes */
+        /*width: 100%;*/
         object-fit: cover;
-        height: 538px;
+        /*height: 538px;*/
         border-radius: 8px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         transition: transform 0.2s ease;
@@ -847,6 +803,37 @@ footer {
     p {
       font-size: 1.4rem;
       margin-bottom: 20px;
+    }
+  }
+
+  .composition2 {
+    display: grid; /* Configura el contenedor como Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Define columnas automáticas de mínimo 300px y máximo 1fr */
+    gap: 1rem; /* Espaciado entre elementos */
+    width: 100%;
+    margin-bottom: 3rem;
+
+    &__photo {
+      border-radius: 8px; /* Bordes redondeados */
+      overflow: hidden; /* Oculta contenido que desborde */
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease-in-out;
+
+      img {
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        height: 100%; /* Ocupa toda la altura */
+        object-fit: cover; /* Recorta la imagen manteniendo la relación de aspecto */
+        transition: transform 0.3s ease-in-out;
+      }
+
+      &:hover {
+        transform: scale(
+          1.05
+        ); /* Aumenta ligeramente la imagen al hacer hover */
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 10;
+      }
     }
   }
 
