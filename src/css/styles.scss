@@ -566,8 +566,6 @@ footer {
 
   .card {
     flex: 1; /* Permite que las tarjetas tengan el mismo ancho */
-    /*min-width: 30rem; 
-    max-width: 30%;    */
     height: 50rem;
     position: relative;
 
@@ -735,9 +733,11 @@ footer {
     align-items: center; /* Alinea las tarjetas al centro */
     max-width: 100%; /* Las tarjetas ocupan todo el ancho */
     gap: 1.5rem; /* Ajusta el espacio entre las tarjetas */
+    margin-bottom: 2rem;
 
     .card {
       width: 95%;
+      height: 40rem;
       /*margin: 1rem auto;*/
 
       &__picture {
@@ -759,6 +759,7 @@ footer {
     /*margin: 1rem auto;*/
 
     .card {
+      height: 40rem;
       &__picture {
         height: 15rem; /* Reducir la altura de las imágenes */
       }
