@@ -524,7 +524,7 @@ footer {
       }
 
       p {
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
     }
 
@@ -576,7 +576,15 @@ footer {
       width: 100%;
       border-radius: 3px;
       overflow: hidden;
-      box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+      /*box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);*/
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        /* box-shadow: 0 1.8rem 5rem rgba(#000, 0.2);*/
+      }
 
       &--front {
         background-color: #fff;
@@ -762,7 +770,7 @@ footer {
       }
 
       &__details ul li {
-        font-size: 1rem; /* Texto más pequeño */
+        font-size: 1.1rem; /* Texto más pequeño */
       }
     }
   }
@@ -1131,7 +1139,7 @@ footer {
       }
 
       p {
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
     }
 
@@ -1322,7 +1330,7 @@ footer {
       }
 
       p {
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
     }
 
