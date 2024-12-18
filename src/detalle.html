@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eventos Culturales en Zuzones - Detalle</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./css/styles.scss" />
     <script src="./js/app.js" defer></script>
     <link
@@ -41,16 +42,32 @@
 
       <section class="media-section">
         <figure>
-          <img
-            src="./img/verano_cultural.jpg"
-            srcset="
-              img/verano_cultural_small.jpg  600w,
-              img/verano_cultural_large.jpg 1200w
-            "
-            sizes="(max-width: 768px) 100vw, 1200px"
-            alt="Celebración cultural en Zuzones"
-            class="main-image"
-          />
+          <picture>
+            <!-- Imagen para pantallas grandes -->
+            <source
+              srcset="./img/verano_cultural_1200.webp"
+              media="(min-width: 1024px)"
+              type="image/webp"
+            />
+            <!-- Imagen para pantallas medianas -->
+            <source
+              srcset="./img/verano_cultural_768.webp"
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <!-- Imagen para pantallas pequeñas -->
+            <source
+              srcset="./img/verano_cultural_480.webp"
+              media="(max-width: 480px)"
+              type="image/webp"
+            />
+            <!-- Imagen de respaldo -->
+            <img
+              src="./img/verano_cultural_1200.jpg"
+              alt="Celebración cultural en Zuzones"
+              class="main-image"
+            />
+          </picture>
           <figcaption>
             El pueblo de Zuzones celebrando su fiesta de verano.
           </figcaption>
@@ -61,32 +78,52 @@
         <h2>Calendario de Actividades</h2>
         <div class="composition2">
           <div class="composition2__photo">
-
             <picture>
-              <source media="(max-width: 600px)" srcset="img/verano_cultural_zuzones_2022_small.jpg">
-              <source media="(max-width: 1200px)" srcset="img/verano_cultural_zuzones_2022_medium.jpg">
-              <img src="img/verano_cultural_zuzones_2022.jpg" alt="Calendario 2022">
+              <source
+                media="(max-width: 600px)"
+                srcset="img/verano_cultural_zuzones_2022_small.jpg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="img/verano_cultural_zuzones_2022_medium.jpg"
+              />
+              <img
+                src="img/verano_cultural_zuzones_2022.jpg"
+                alt="Calendario 2022"
+              />
             </picture>
-            
           </div>
           <div class="composition2__photo">
-
             <picture>
-              <source media="(max-width: 600px)" srcset="img/verano_cultural_zuzones_2023_small.jpg">
-              <source media="(max-width: 1200px)" srcset="img/verano_cultural_zuzones_2023_medium.jpg">
-              <img src="img/verano_cultural_zuzones_2023.jpg" alt="Calendario 2023">
+              <source
+                media="(max-width: 600px)"
+                srcset="img/verano_cultural_zuzones_2023_small.jpg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="img/verano_cultural_zuzones_2023_medium.jpg"
+              />
+              <img
+                src="img/verano_cultural_zuzones_2023.jpg"
+                alt="Calendario 2023"
+              />
             </picture>
-
           </div>
           <div class="composition2__photo">
-
             <picture>
-              <source media="(max-width: 600px)" srcset="img/verano_cultural_zuzones_2024_small.jpg">
-              <source media="(max-width: 1200px)" srcset="img/verano_cultural_zuzones_2024_medium.jpg">
-              <img src="img/verano_cultural_zuzones_2024.jpg" alt="Calendario 2024">
+              <source
+                media="(max-width: 600px)"
+                srcset="img/verano_cultural_zuzones_2024_small.jpg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="img/verano_cultural_zuzones_2024_medium.jpg"
+              />
+              <img
+                src="img/verano_cultural_zuzones_2024.jpg"
+                alt="Calendario 2024"
+              />
             </picture>
-
-            
           </div>
         </div>
       </section>
