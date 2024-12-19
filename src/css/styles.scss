@@ -477,22 +477,26 @@ footer {
 /* Pantallas grandes (769px a 1024px) */
 @media only screen and (max-width: 1024px) {
   .card-container {
-    gap: 1rem;
-  }
+    flex-direction: column; /* Cambia a una columna */
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Alinea las tarjetas al centro */
+    max-width: 100%; /* Las tarjetas ocupan todo el ancho */
+    gap: 1.5rem; /* Ajusta el espacio entre las tarjetas */
+    margin-bottom: 2rem;
 
-  .card {
-    &__picture {
-      height: 22rem;
-    }
+    .card {
+      width: 95%;
+      height: 40rem;
 
-    &__heading {
-      font-size: 2.4rem;
-      top: 6rem;
-      right: 1.8rem;
-    }
+      &__picture {
+        height: 20rem;
+      }
 
-    &__details ul li {
-      font-size: 1.2rem;
+      &__heading {
+        font-size: 1.8rem;
+        top: 5rem; /* Ajustar posición del título */
+        right: 1.5rem;
+      }
     }
   }
 }
