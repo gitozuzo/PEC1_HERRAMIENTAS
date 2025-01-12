@@ -1310,6 +1310,11 @@ footer {
         }
       }
     }
+
+    svg {
+      margin-left: 0; /* Elimina el margen izquierdo */
+      margin-top: 10px; /* Añade un pequeño margen superior */
+    }
   }
 
   .category-item {
