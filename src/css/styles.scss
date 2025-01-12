@@ -172,34 +172,36 @@ header {
 }
 
 footer {
-  text-align: center;
-  background-color: var(--primary-color);
-  color: var(--font-color);
-  padding: 20px; /* Espacio interno */
-  margin-top: 20px;
+  display: flex; /* Configura el footer como contenedor flex */
+  justify-content: space-between; /* Espacia el contenido (menú centrado, logo a la derecha) */
+  align-items: center; /* Alinea verticalmente los elementos */
+  background-color: var(--primary-color); /* Fondo del footer */
+  color: var(--font-color); /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+  margin-top: 20px; /* Separación del contenido superior */
   font-size: 1.2rem;
 
   #nav-menu {
-    display: flex;
+    flex: 1; /* Permite que el menú ocupe el espacio necesario */
+    display: flex; /* Configura el menú como contenedor flex */
     justify-content: center; /* Centra horizontalmente el menú */
-    align-items: center; /* Alinea verticalmente el menú */
+    align-items: center;
 
     ul {
-      list-style-type: none;
+      list-style-type: none; /* Elimina los puntos de la lista */
       padding: 0;
       margin: 0;
-      display: flex;
-      justify-content: center; /* Centra el contenido dentro del `ul` */
+      display: flex; /* Configura los elementos de la lista como flex */
 
       li {
-        margin: 0 15px;
+        margin: 0 15px; /* Espaciado entre los elementos del menú */
 
         a {
-          color: var(--font-color);
-          text-decoration: none;
+          color: var(--font-color); /* Color del enlace */
+          text-decoration: none; /* Elimina el subrayado */
           font-weight: bold;
-          font-size: 22px;
-          transition: color 0.3s;
+          font-size: 22px; /* Tamaño de fuente de los enlaces */
+          transition: color 0.3s; /* Transición para hover */
 
           &:hover {
             color: var(
@@ -209,10 +211,14 @@ footer {
         }
       }
     }
+  }
 
-    &.show {
-      display: flex; /* Mostrar el menú cuando esté activado */
-    }
+  /* Estilo para el logo SVG */
+  svg {
+    flex-shrink: 0; /* Evita que el logo se reduzca */
+    width: 150px; /* Ajusta el ancho del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-left: auto; /* Empuja el logo hacia la derecha */
   }
 }
 
