@@ -1297,9 +1297,11 @@ footer {
 /*************************/
 @media (max-width: 768px) {
   footer {
+    flex-direction: column; /* Cambia el footer a columna */
+    text-align: center;
+
     #nav-menu {
-      flex-direction: column; /* Cambia el menú a disposición vertical */
-      align-items: center; /* Centra los elementos verticalmente */
+      margin-bottom: 20px; /* Añade separación entre menú y logo */
 
       ul {
         flex-direction: column;
