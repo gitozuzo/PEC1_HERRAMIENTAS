@@ -252,6 +252,7 @@ footer {
 
     &__photo {
       width: 80%;
+      aspect-ratio: 3 / 2; /* Relación de aspecto 1000:667 */
       height: auto;
       display: block;
       object-fit: cover;
