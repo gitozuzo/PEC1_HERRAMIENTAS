@@ -216,8 +216,9 @@ footer {
   /* Estilo para el logo SVG */
   svg {
     flex-shrink: 0; /* Evita que el logo se reduzca */
-    width: 150px; /* Ajusta el ancho del logo */
+    width: 300px; /* Ajusta el ancho del logo */
     height: auto; /* Mantiene la proporción del logo */
+    display: block; /* Asegura que el SVG se comporte como un bloque */
     margin-left: auto; /* Empuja el logo hacia la derecha */
   }
 }
