@@ -104,19 +104,29 @@
             src="./img/zuzones_presentacion.webp"
             alt="Paisaje panorámico de Zuzones"
             class="fluid-image"
+             loading="lazy"
           />
           <figcaption>
             Vista panorámica de Zuzones, rodeada de montañas y naturaleza.
           </figcaption>
         </figure>
 
-        <figure>
-           <iframe src="https://www.youtube.com/embed/Jer1y2BHgxI?si=xDPIxUktxEZsLZma" 
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <figcaption>
-            Un paseo por el pueblo de Zuzones.
-          </figcaption>
-        </figure>    
+       <figure class="youtube-wrapper" data-video-id="Jer1y2BHgxI">
+  <!-- Miniatura del video -->
+  <img
+    src="img/hqdefault.jpg"
+    alt="Un paseo por el pueblo de Zuzones"
+    class="youtube-thumbnail"
+    loading="lazy"
+  />
+  <!-- Botón de reproducción -->
+  <button class="youtube-play-button" aria-label="Reproducir video">
+    ▶
+  </button>
+  <figcaption>
+    Un paseo por el pueblo de Zuzones.
+  </figcaption>
+</figure>
 
       </section>   
 
