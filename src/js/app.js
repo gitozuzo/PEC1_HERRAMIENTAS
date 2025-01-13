@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     AOS.init();
   }
 
-  console.log("2");
+  console.log(window.location.pathname.includes);
 
   if (window.location.pathname.includes("presentacion.html")) {
     console.log("3");
