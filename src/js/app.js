@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("1");
   // Verifica si estás en la página donde necesitas AOS
   if (window.location.pathname.includes("detalle.html")) {
     // Inicializa AOS solo en la página detalle.html
     AOS.init();
   }
 
+  console.log("2");
+
   if (window.location.pathname.includes("presentacion.html")) {
+    console.log("3");
     // Inicializa AOS solo en la página detalle.html
     const youtubeWrappers = document.querySelectorAll(".youtube-wrapper");
 
@@ -14,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const playButton = wrapper.querySelector(".youtube-play-button");
 
       playButton.addEventListener("click", () => {
+        console.log("4");
         const iframe = document.createElement("iframe");
         iframe.setAttribute(
           "src",
@@ -34,5 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
         wrapper.appendChild(iframe);
       });
     });
+
+    console.log("5");
   }
+
+  console.log("6");
 });
